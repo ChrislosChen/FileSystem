@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=0.5,minimum-scale=0.5 maximum-scale=2.0, user-scalable=no;" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="format-detection" content="telephone=no" />
+        
+        <!-- no cache headers -->
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="no-cache" />
+        <meta http-equiv="Expires" content="-1" />
+        <meta http-equiv="Cache-Control" content="no-cache" />
+        <!-- end no cache headers -->
+        
+        <script src="js/jquery-1.10.1.min.js"></script>
+        <script type="application/javascript" src="js/iscroll.js"></script>
+        <script src="js/global.js"></script>
+        
+        <title></title>
+        <link type="text/css" rel="stylesheet" href="css/css.css"/>
+        <link rel="stylesheet" href="css/global.css" />
+    </head>
+    
+    <body>
+        <div align="center">
+            <form action="" enctype="application/x-www-form-urlencoded">
+                <a href="cxg:select" style="display:block; padding:20px;">选择图片</a><br/>
+                <img alt=""  id="imgShow" src=""  width="300px;">
+                    </form>
+        </div>
+        
+        <!--调用手机相机-->
+        <!--    <input type="file" capture="camera" accept="image/*" id="cameraInput"-->
+        <!--    name="cameraInput" class="sign_file" />-->
+        
+        
+    </body>
+    <script>
+        
+        function showAlert() {
+            alert('in show alert');
+        }
+    
+    function showAlert(name) {
+        alert(name +'  in show alert');
+        return "success test";
+    }
+    
+    function showImg(url){
+        alert(url);
+        //var img_file = "data:image/png;base64,"+url;
+        document.getElementById("imgShow").src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAPACAIAAAAqgF+sAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAKLcJJ==";
+    }
+    
+    var _cxProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(decodeURIComponent("%3Cscript src='" + _cxProtocol + "data.chexiang.com/js/cx_analytics.js?t=" + new Date().getTime() + "&type=' id='analyticsScript' type='text/javascript'%3E" + "%3C/script%3E"));
+    
+    </script>
+</html>
